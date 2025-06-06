@@ -36,7 +36,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_URL: ${{ github.event.repository.html_url }}
+          VITE_BASE_URL: ${{ github.event.repository.html_url }}
         run: npm run build
 
       - name: Upload artifact
