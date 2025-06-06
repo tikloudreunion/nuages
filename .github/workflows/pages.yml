@@ -18,7 +18,6 @@ jobs:
   build:
     environment:
       name: github-pages
-      base_url: ${{ github.event.repository.html_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Configure GitHub Pages
