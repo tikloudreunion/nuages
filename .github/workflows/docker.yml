@@ -7,10 +7,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  contents: read
-  packages: write
-  id-token: write
 
 env:
   REGISTRY: ghcr.io
@@ -19,6 +15,10 @@ env:
 jobs:
   build:
     name: Build
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
