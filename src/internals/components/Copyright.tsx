@@ -1,4 +1,3 @@
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 export default function Copyright(props: React.ComponentProps<typeof Typography>) {
@@ -15,11 +14,11 @@ export default function Copyright(props: React.ComponentProps<typeof Typography>
       ]}
     >
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Sitemark
-      </Link>{' '}
+        Ti Kloud Réunion.
+      {' '}
       {new Date().getFullYear()}
-      {'.'}
+      {'. '}
+        Licensed under the MIT License
     </Typography>
   );
 }
